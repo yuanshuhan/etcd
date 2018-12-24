@@ -6,17 +6,12 @@ workspace:
   path: src/github.com/octocat/hello-world
 
 steps:
-- name: test
-  image: golang
-  commands:
-  - go get
-  - go test
 
 - name: docker  
   image: plugins/docker
   settings:
-    username: kevinbacon
-    password: pa55word
+    username: cn-north-1@HYhvz1QTHxH5qlPbGCFW
+    password: 4c10d0c191f41e720055a4aad1008e3a083eff007dc08b1e112342fd6cef6735
     auto_tag: true
     repo: swr.cn-north-1.myhuaweicloud.com/yuanlei/dronetest
     dockerfile: ./Dockerfile
