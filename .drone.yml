@@ -1,0 +1,12 @@
+kind: pipeline
+name: default
+
+steps:
+- name: docker  
+  image: plugins/docker
+  settings:
+    username: kevinbacon
+    password: pa55word
+    auto_tag: true
+    repo: swr.cn-north-1.myhuaweicloud.com/yuanlei/dronetest
+    dockerfile: ./Dockerfile
