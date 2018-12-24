@@ -1,7 +1,17 @@
 kind: pipeline
 name: default
 
+workspace:
+  base: /go
+  path: src/github.com/octocat/hello-world
+
 steps:
+- name: test
+  image: golang
+  commands:
+  - go get
+  - go test
+
 - name: docker  
   image: plugins/docker
   settings:
