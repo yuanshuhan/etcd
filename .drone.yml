@@ -10,8 +10,8 @@ steps:
 - name: docker  
   image: plugins/docker
   settings:
-    username: cn-north-1@HYhvz1QTHxH5qlPbGCFW
-    password: 4c10d0c191f41e720055a4aad1008e3a083eff007dc08b1e112342fd6cef6735
+    username: yuanshuhan
+    password: 198412cocoyuan
     auto_tag: true
-    repo: swr.cn-north-1.myhuaweicloud.com/yuanlei/dronetest
+    repo: yuanshuhan/dronetest
     dockerfile: ./Dockerfile
